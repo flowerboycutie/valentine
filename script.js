@@ -3,7 +3,6 @@ const yesBtn = document.querySelector(".yes-btn");
 
 //clicked yes
 yesBtn.addEventListener("click", (e) => {
-    console.log('yes')
     // alert("I love you too! ❤️"); // Show celebration
     const celebration = document.getElementById('celebration');
     celebration.classList.remove('hidden');
@@ -16,7 +15,6 @@ yesBtn.addEventListener("click", (e) => {
 let noCount = 0;
 noBtn.addEventListener("click", (e) => {
     noCount++;
-    console.log(`no counts: ${noCount}`);
 
     switch (noCount) {
         case 1:

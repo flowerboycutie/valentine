@@ -29,32 +29,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    touch-action: manipulation;
 }
-
-/* Remove tap highlight on mobile */
-* {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-/* But allow text selection for headings and paragraphs */
-h1, h2, h3, h4, h5, h6, p {
-    -webkit-user-select: text;
-    user-select: text;
-}
-
-/* Remove blue outline on buttons */
-button {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-}
-
-button:focus {
-    outline: none;
-}
-
 
 .header, .btn-container {
   text-align: center;
@@ -83,10 +59,12 @@ h1 {
     width: 10rem;
     height: 100%;
     text-align: center;
+    color: var(--white);
 }
 
 .yes-btn {
     background-color: var(--primary-color);
+    color: var(--white);
 }
 
 @keyframes yesBtnColorChange {
@@ -95,7 +73,14 @@ h1 {
 }
 
 .no-btn {
-    background-color: var(--secondary-color);    
+    background-color: var(--secondary-color);   
+    color: var(--white);
+}
+
+.btns:hover,
+.btns:focus,
+.btns:active {
+    color: white; 
 }
 
 /* Celebration overlay */
