@@ -77,12 +77,6 @@ h1 {
     color: var(--white);
 }
 
-.btns:hover,
-.btns:focus,
-.btns:active {
-    color: white; 
-}
-
 /* Celebration overlay */
 .celebration {
     position: fixed;
